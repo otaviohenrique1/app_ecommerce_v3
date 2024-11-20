@@ -49,7 +49,7 @@ export const valoresIniciaisCadastroPessoaJuridica: FormTypesCadastroPessoaJurid
 const nome = yup.string().required("Campo vazio");
 const email = yup.string().required("Campo vazio").email("Email inválido");
 const senha = yup.string().required("Campo vazio");
-const confimarSenha = yup.string().required("Campo vazio").oneOf([yup.ref("senha")], "Senhas diferentes");
+const confimarSenha = yup.string().oneOf([yup.ref("senha"), ""], "Senhas diferentes").required("Campo vazio");
 const cpf = yup.string().required("Campo vazio");
 const genero = yup.string().required("Campo vazio");
 const dataNascimento = yup.string().required("Campo vazio");
