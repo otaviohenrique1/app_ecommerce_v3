@@ -16,7 +16,6 @@ export default function Login({ navigation }: Props) {
   const {
     control,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schemaLogin),
@@ -55,7 +54,9 @@ export default function Login({ navigation }: Props) {
           >Esqueci a senha</Button>
           <Button
             mode="contained"
-            onPress={handleSubmit((values) => {})}
+            onPress={handleSubmit((values) => {
+              navigation.push("HomePage")
+            })}
             style={styles.botao}
           >Entrar</Button>
           <Button

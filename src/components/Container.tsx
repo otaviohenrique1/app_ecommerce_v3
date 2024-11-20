@@ -11,7 +11,7 @@ export function Container(props: ContainerProps) {
   return (
     <View style={styles.container}>
       {children}
-      <StatusBar style="light" />
+      <StatusBar style="auto" />
     </View>
   );
 }

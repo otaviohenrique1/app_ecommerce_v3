@@ -30,6 +30,7 @@ interface DadosBasicos {
 interface Endereco {
   cep: string;
   endereco: string;
+  bairro: string;
   numero: string;
   cidade: string;
   estado: string;
