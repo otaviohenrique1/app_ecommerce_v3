@@ -5,7 +5,7 @@ interface MainProps {
   children: ReactNode;
 }
 
-export default function Main(props: MainProps) {
+export function Main(props: MainProps) {
   const { children } = props;
   return (
     <View style={styles.main}>

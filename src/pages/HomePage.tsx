@@ -3,7 +3,7 @@ import { Container } from '../components/Container';
 import { RootStackParamList } from './routes';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StyleSheet } from 'react-native';
-import Main from '../components/Main';
+import { Main } from '../components/Main';
 
 type Props = NativeStackScreenProps<RootStackParamList, "HomePage">;
 
