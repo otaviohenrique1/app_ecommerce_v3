@@ -1,6 +1,6 @@
 import { Button, Text } from "react-native-paper";
 import { Container } from '../components/Container';
-import { RootStackParamList } from './routes';
+import { NativeStackRootStackParamList } from './routes';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StyleSheet, View } from 'react-native';
 import { Main } from '../components/Main';
@@ -10,7 +10,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { schemaLogin, valoresIniciaisLogin } from "../utils/constantes";
 import { CampoTexto } from "../components/CampoTexto";
 
-type Props = NativeStackScreenProps<RootStackParamList, "Login">;
+type Props = NativeStackScreenProps<NativeStackRootStackParamList, "Login">;
 
 export default function Login({ navigation }: Props) {
   const {
@@ -61,7 +61,7 @@ export default function Login({ navigation }: Props) {
           >Entrar</Button>
           <Button
             mode="text"
-            onPress={() => {}}
+            onPress={() => navigation.push("CadastroUsuario")}
             style={styles.botao}
           >Não tem uma conta? Cadastre-se gratuitamente</Button>
         </Main>

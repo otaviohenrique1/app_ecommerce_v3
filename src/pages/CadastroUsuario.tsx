@@ -1,6 +1,6 @@
 import { Appbar, Button, RadioButton, Text } from "react-native-paper";
 import { Container } from '../components/Container';
-import { RootStackParamList } from './routes';
+import { NativeStackRootStackParamList } from './routes';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { Main } from '../components/Main';
@@ -12,7 +12,7 @@ import { CampoTexto } from "../components/CampoTexto";
 import { useEffect, useState } from "react";
 import React from "react";
 
-type Props = NativeStackScreenProps<RootStackParamList, "CadastroUsuario">;
+type Props = NativeStackScreenProps<NativeStackRootStackParamList, "CadastroUsuario">;
 
 export default function CadastroUsuario({ navigation }: Props) {
   const [checked, setChecked] = useState('fisica');

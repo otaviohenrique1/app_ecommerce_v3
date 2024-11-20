@@ -5,16 +5,16 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StyleSheet } from 'react-native';
 import { Main } from '../components/Main';
 
-type Props = NativeStackScreenProps<NativeStackRootStackParamList, "HomePage">;
+type Props = NativeStackScreenProps<NativeStackRootStackParamList, "Favoritos">;
 
-export default function HomePage({ navigation }: Props) {
+export default function Favoritos({ navigation }: Props) {
   return (
     <Container>
       <Appbar.Header style={{ backgroundColor: "cadetblue" }}>
-        <Appbar.Content title="HomePage" />
+        <Appbar.Content title="Favoritos" />
       </Appbar.Header>
       <Main>
-        <Text variant="headlineLarge">HomePage</Text>
+        <Text variant="headlineLarge">Favoritos</Text>
       </Main>
     </Container>
   );
