@@ -1,3 +1,8 @@
+export interface FormularioProps {
+  tipoFormulario: "fisico" | "juridico";
+  navigation: any;
+}
+
 export interface FormTypesLogin {
   email: string;
   senha: string;

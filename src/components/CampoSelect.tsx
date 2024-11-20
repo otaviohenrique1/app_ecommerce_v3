@@ -10,6 +10,7 @@ interface CampoSelectProps<T extends FieldValues, L = ItemValue, TFieldValues ex
   style?: StyleProp<TextStyle>;
   name: Path<T>;
   errors: FieldError | undefined;
+  label: string;
   lista: {
     label: string;
     value: L;
@@ -17,7 +18,7 @@ interface CampoSelectProps<T extends FieldValues, L = ItemValue, TFieldValues ex
 }
 
 export function CampoSelect<T extends FieldValues, L = ItemValue>(props: CampoSelectProps<T, L>) {
-  const { control, name, errors, style, lista } = props;
+  const { control, name, errors, style, lista, label } = props;
 
   return (
     <>
@@ -33,7 +34,7 @@ export function CampoSelect<T extends FieldValues, L = ItemValue>(props: CampoSe
             onBlur={onBlur}
             onValueChange={(itemValue) => onChange(itemValue)}
           >
-            <Picker.Item label="Selecione" value="" />
+            <Picker.Item label={label} value="" />
             {lista.map((item, index) => {
               return (
                 <Picker.Item key={index} label={item.label} value={item.value} />
