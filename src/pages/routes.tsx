@@ -16,7 +16,7 @@ export default function AppRoutes() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Login"
+        initialRouteName="CadastroUsuario"
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="Login" component={Login} />

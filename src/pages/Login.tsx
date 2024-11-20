@@ -37,12 +37,15 @@ export default function Login({ navigation }: Props) {
             name="email"
             errors={errors.email}
             style={styles.campoTexto}
+            keyboardType="email-address"
           />
           <CampoTexto
             control={control}
             label="Senha"
             name="senha"
             errors={errors.email}
+            secureTextEntry={true}
+            keyboardType="default"
             style={styles.campoTexto}
           />
           <Button
