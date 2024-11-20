@@ -7,6 +7,7 @@ import { CampoTexto } from "./CampoTexto";
 import { Button } from "react-native-paper";
 import { StyleSheet } from "react-native";
 import { CampoSelect } from "./CampoSelect";
+import MaskInput from "react-native-mask-input";
 
 export function FormularioPessoaJuridica(props: FormularioProps) {
   const { navigation, tipoFormulario } = props;
@@ -45,11 +46,17 @@ export function FormularioPessoaJuridica(props: FormularioProps) {
       />
       <CampoTexto
         control={control}
-        label="CPF"
+        label="CNPJ"
         name="cnpj"
         errors={errors.cnpj}
         style={styles.campoTexto}
         keyboardType="decimal-pad"
+        render={(props) => (
+          <MaskInput
+            {...props}
+            mask={[/\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/]}
+          />
+        )}
       />
       <CampoTexto
         control={control}
@@ -84,6 +91,12 @@ export function FormularioPessoaJuridica(props: FormularioProps) {
         errors={errors.telefone}
         style={styles.campoTexto}
         keyboardType="decimal-pad"
+        render={(props) => (
+          <MaskInput
+            {...props}
+            mask={['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+          />
+        )}
       />
       <CampoTexto
         control={control}
@@ -92,6 +105,12 @@ export function FormularioPessoaJuridica(props: FormularioProps) {
         errors={errors.celular}
         style={styles.campoTexto}
         keyboardType="decimal-pad"
+        render={(props) => (
+          <MaskInput
+            {...props}
+            mask={['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+          />
+        )}
       />
       <CampoTexto
         control={control}
@@ -99,6 +118,12 @@ export function FormularioPessoaJuridica(props: FormularioProps) {
         name="dataAberturaEmpresa"
         errors={errors.dataAberturaEmpresa}
         style={styles.campoTexto}
+        render={(props) => (
+          <MaskInput
+            {...props}
+            mask={[/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/]}
+          />
+        )}
       />
       <CampoTexto
         control={control}
@@ -108,12 +133,31 @@ export function FormularioPessoaJuridica(props: FormularioProps) {
         style={styles.campoTexto}
         keyboardType="decimal-pad"
       />
-      <CampoTexto
+      <CampoSelect
         control={control}
         label="Informações tributarias"
         name="informacoesTributarias"
         errors={errors.informacoesTributarias}
+        style={styles.picker}
+        lista={[
+          {label: "Contribuinte ICMS", value: "C"},
+          {label: "Não contribuinte ICMS", value: "N"},
+          {label: "Isento de incrição estadual", value: "I"},
+        ]}
+      />
+      <CampoTexto
+        control={control}
+        label="CEP"
+        name="cep"
+        errors={errors.cep}
         style={styles.campoTexto}
+        keyboardType="number-pad"
+        render={(props) => (
+          <MaskInput
+            {...props}
+            mask={[/\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/]}
+          />
+        )}
       />
       <CampoTexto
         control={control}

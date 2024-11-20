@@ -1,7 +1,7 @@
 import React from "react";
 import { Control, Controller, FieldError, FieldPath, FieldValues, Path } from "react-hook-form";
 import { HelperText, TextInput } from "react-native-paper";
-import { TextInputLabelProp } from "react-native-paper/lib/typescript/components/TextInput/types";
+import { RenderProps, TextInputLabelProp } from "react-native-paper/lib/typescript/components/TextInput/types";
 import { KeyboardTypeOptions, StyleProp, TextStyle } from "react-native";
 
 interface CampoTextoProps<T extends FieldValues, TFieldValues extends FieldValues = FieldValues, TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>> {
@@ -13,10 +13,11 @@ interface CampoTextoProps<T extends FieldValues, TFieldValues extends FieldValue
   multiline?: boolean | undefined;
   secureTextEntry?: boolean | undefined;
   keyboardType?: KeyboardTypeOptions | undefined;
+  render?: (props: RenderProps) => React.ReactNode;
 }
 
 export function CampoTexto<T extends FieldValues>(props: CampoTextoProps<T>) {
-  const { control, label, name, errors, multiline, style, secureTextEntry, keyboardType } = props;
+  const { control, label, name, errors, multiline, style, secureTextEntry, keyboardType, render } = props;
   return (
     <>
       <Controller
@@ -34,6 +35,7 @@ export function CampoTexto<T extends FieldValues>(props: CampoTextoProps<T>) {
             style={style}
             secureTextEntry={secureTextEntry}
             keyboardType={keyboardType}
+            render={render}
           />
         )}
         name={name}

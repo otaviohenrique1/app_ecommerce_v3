@@ -7,6 +7,7 @@ import { CampoTexto } from "./CampoTexto";
 import { Button } from "react-native-paper";
 import { StyleSheet } from "react-native";
 import { CampoSelect } from "./CampoSelect";
+import MaskInput from 'react-native-mask-input';
 
 export function FormularioPessoaFisica(props: FormularioProps) {
   const { navigation, tipoFormulario } = props;
@@ -43,6 +44,12 @@ export function FormularioPessoaFisica(props: FormularioProps) {
         errors={errors.cpf}
         style={styles.campoTexto}
         keyboardType="decimal-pad"
+        render={(props) => (
+          <MaskInput
+            {...props}
+            mask={[/\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-', /\d/, /\d/]}
+          />
+        )}
       />
       <CampoTexto
         control={control}
@@ -77,6 +84,12 @@ export function FormularioPessoaFisica(props: FormularioProps) {
         errors={errors.dataNascimento}
         style={styles.campoTexto}
         keyboardType="number-pad"
+        render={(props) => (
+          <MaskInput
+            {...props}
+            mask={[/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/]}
+          />
+        )}
       />
       <CampoTexto
         control={control}
@@ -85,6 +98,12 @@ export function FormularioPessoaFisica(props: FormularioProps) {
         errors={errors.telefone}
         style={styles.campoTexto}
         keyboardType="decimal-pad"
+        render={(props) => (
+          <MaskInput
+            {...props}
+            mask={['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+          />
+        )}
       />
       <CampoTexto
         control={control}
@@ -93,6 +112,12 @@ export function FormularioPessoaFisica(props: FormularioProps) {
         errors={errors.celular}
         style={styles.campoTexto}
         keyboardType="decimal-pad"
+        render={(props) => (
+          <MaskInput
+            {...props}
+            mask={['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+          />
+        )}
       />
       <CampoSelect
         control={control}
@@ -106,6 +131,20 @@ export function FormularioPessoaFisica(props: FormularioProps) {
           { label: "Outros", value: "O" },
           { label: "Não especificado", value: "N" }
         ]}
+      />
+      <CampoTexto
+        control={control}
+        label="CEP"
+        name="cep"
+        errors={errors.cep}
+        style={styles.campoTexto}
+        keyboardType="number-pad"
+        render={(props) => (
+          <MaskInput
+            {...props}
+            mask={[/\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/]}
+          />
+        )}
       />
       <CampoTexto
         control={control}
@@ -143,33 +182,33 @@ export function FormularioPessoaFisica(props: FormularioProps) {
         errors={errors.estado}
         style={styles.picker}
         lista={[
-          {label: "Acre", value: "AC"},
-          {label: "Alagoas", value: "AL"},
-          {label: "Amapá", value: "AP"},
-          {label: "Amazonas", value: "AM"},
-          {label: "Bahia", value: "BA"},
-          {label: "Ceará", value: "CE"},
-          {label: "Distrito Federal", value: "DF"},
-          {label: "Espírito Santo", value: "ES"},
-          {label: "Goiás", value: "GO"},
-          {label: "Maranhão", value: "MA"},
-          {label: "Mato Grosso", value: "MT"},
-          {label: "Mato Grosso do Sul", value: "MS"},
-          {label: "Minas Gerais", value: "MG"},
-          {label: "Pará", value: "PA"},
-          {label: "Paraíba", value: "PB"},
-          {label: "Paraná", value: "PR"},
-          {label: "Pernambuco", value: "PE"},
-          {label: "Piauí", value: "PI"},
-          {label: "Rio de Janeiro", value: "RJ"},
-          {label: "Rio Grande do Norte", value: "RN"},
-          {label: "Rio Grande do Sul", value: "RS"},
-          {label: "Rondônia", value: "RO"},
-          {label: "Roraima", value: "RR"},
-          {label: "Santa Catarina", value: "SC"},
-          {label: "São Paulo", value: "SP"},
-          {label: "Sergipe", value: "SE"},
-          {label: "Tocantins", value: "TO"},
+          { label: "Acre", value: "AC" },
+          { label: "Alagoas", value: "AL" },
+          { label: "Amapá", value: "AP" },
+          { label: "Amazonas", value: "AM" },
+          { label: "Bahia", value: "BA" },
+          { label: "Ceará", value: "CE" },
+          { label: "Distrito Federal", value: "DF" },
+          { label: "Espírito Santo", value: "ES" },
+          { label: "Goiás", value: "GO" },
+          { label: "Maranhão", value: "MA" },
+          { label: "Mato Grosso", value: "MT" },
+          { label: "Mato Grosso do Sul", value: "MS" },
+          { label: "Minas Gerais", value: "MG" },
+          { label: "Pará", value: "PA" },
+          { label: "Paraíba", value: "PB" },
+          { label: "Paraná", value: "PR" },
+          { label: "Pernambuco", value: "PE" },
+          { label: "Piauí", value: "PI" },
+          { label: "Rio de Janeiro", value: "RJ" },
+          { label: "Rio Grande do Norte", value: "RN" },
+          { label: "Rio Grande do Sul", value: "RS" },
+          { label: "Rondônia", value: "RO" },
+          { label: "Roraima", value: "RR" },
+          { label: "Santa Catarina", value: "SC" },
+          { label: "São Paulo", value: "SP" },
+          { label: "Sergipe", value: "SE" },
+          { label: "Tocantins", value: "TO" },
         ]}
       />
       <CampoTexto
