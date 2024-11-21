@@ -9,11 +9,13 @@ import Favoritos from './Favoritos';
 import Home from './Home';
 import Perfil from './Perfil';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import { PagamentoCartao } from './PagamentoCartao';
 
 export type NativeStackRootStackParamList = {
   Login: undefined;
   HomePage: undefined;
   CadastroUsuario: undefined;
+  PagamentoCartao: undefined;
 }
 
 const NativeStack = createNativeStackNavigator<NativeStackRootStackParamList>();
@@ -22,12 +24,13 @@ export default function AppRoutes() {
   return (
     <NavigationContainer>
       <NativeStack.Navigator
-        initialRouteName="CadastroUsuario"
+        initialRouteName="PagamentoCartao"
         screenOptions={{ headerShown: false }}
       >
         <NativeStack.Screen name="Login" component={Login} />
         <NativeStack.Screen name="HomePage" component={AppRoutesBottonTabs} />
         <NativeStack.Screen name="CadastroUsuario" component={CadastroUsuario} />
+        <NativeStack.Screen name="PagamentoCartao" component={PagamentoCartao} />
       </NativeStack.Navigator>
     </NavigationContainer>
   );
