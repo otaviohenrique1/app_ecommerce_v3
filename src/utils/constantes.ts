@@ -1,9 +1,16 @@
-import { FormTypesCadastroPessoaFisica, FormTypesCadastroPessoaJuridica, FormTypesLogin } from "../types/types";
+import { FormTypesCadastroPessoaFisica, FormTypesCadastroPessoaJuridica, FormTypesLogin, FormTypesPaginaCartaoCredito } from "../types/types";
 import * as yup from "yup";
 
 export const valoresIniciaisLogin: FormTypesLogin = {
   email: "",
   senha: "",
+}
+
+export const valoresIniciaisPaginaCartaoCredito: FormTypesPaginaCartaoCredito = {
+  nomeCartao: "",
+  numeroCartao: "",
+  cvvCartao: "",
+  validadeCartao: ""
 }
 
 export const valoresIniciaisCadastroPessoaFisica: FormTypesCadastroPessoaFisica = {
@@ -68,6 +75,14 @@ const bairro = yup.string().required("Campo vazio");
 const cidade = yup.string().required("Campo vazio");
 const estado = yup.string().required("Campo vazio");
 const complemento = yup.string().required("Campo vazio");
+const nomeCartao = yup.string().required("Campo vazio");
+const numeroCartao = yup.string().required("Campo vazio");
+const cvvCartao = yup.string().required("Campo vazio");
+const validadeCartao = yup.string().required("Campo vazio");
+
+export const schemaPaginaCartaoCredito = yup.object().shape({
+  nomeCartao, numeroCartao, cvvCartao, validadeCartao
+});
 
 export const schemaLogin = yup.object().shape({
   email, senha,

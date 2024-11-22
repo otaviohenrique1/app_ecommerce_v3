@@ -8,6 +8,13 @@ export interface FormTypesLogin {
   senha: string;
 }
 
+export interface FormTypesPaginaCartaoCredito {
+  nomeCartao: string;
+  numeroCartao: string;
+  cvvCartao: string;
+  validadeCartao: string;
+}
+
 export interface FormTypesCadastroPessoaFisica extends DadosBasicos, Endereco {
   nome: string;
   cpf: string;
