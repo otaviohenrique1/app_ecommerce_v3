@@ -24,7 +24,7 @@ export default function AppRoutes() {
   return (
     <NavigationContainer>
       <NativeStack.Navigator
-        initialRouteName="PagamentoCartao"
+        initialRouteName="HomePage"
         screenOptions={{ headerShown: false }}
       >
         <NativeStack.Screen name="Login" component={Login} />
