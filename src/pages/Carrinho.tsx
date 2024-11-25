@@ -5,10 +5,15 @@ import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 import { FlatList, StyleSheet, View } from 'react-native';
 import { Main } from '../components/Main';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import { RootState } from "../redux/store";
+import { removerDoCarrinho } from "../redux/carrinhoSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 type Props = BottomTabScreenProps<BottonTabsRootStackParamList, "Carrinho">;
 
 export default function Carrinho({ navigation }: Props) {
+  const carrinho = useSelector((state: RootState) => state.carrinho.data);
+  const dispatch = useDispatch();
 
   return (
     <Container>
@@ -17,14 +22,14 @@ export default function Carrinho({ navigation }: Props) {
       </Appbar.Header>
       <Main>
         <FlatList
-          data={data}
+          data={carrinho}
           keyExtractor={(item) => item.id.toString()}
           renderItem={({ item }) => {
-            const { nome, preco, quantidade } = item;
+            const { id, nome, preco, quantidade } = item;
             return (
               <View>
                 <List.Item
-                  left={(props) => <MaterialCommunityIcons {...props} name="toolbox-outline" size={24} color="black" />}
+                  left={(props) => <MaterialCommunityIcons {...props} name="expansion-card-variant" size={40} />}
                   title={nome}
                   description={
                     <View>
@@ -47,6 +52,13 @@ export default function Carrinho({ navigation }: Props) {
                       </View>
                     </View>
                   }
+                  right={(props) => (
+                    <IconButton
+                      {...props}
+                      icon="delete"
+                      onPress={() => dispatch(removerDoCarrinho(id))}
+                    />
+                  )}
                 />
                 <Divider />
               </View>
@@ -63,12 +75,3 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   }
 });
-
-const data = [
-  {
-    id: 1,
-    nome: "Placa de video RTX 4070 12GB",
-    preco: 3000,
-    quantidade: 1,
-  }
-];
