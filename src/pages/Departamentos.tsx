@@ -73,62 +73,98 @@ const departamentos = [
       {
         id: 2, label: "Disco Rígidos(HD)",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Acessórios" },
+          { id: 2, label: "Corporativo" },
+          { id: 3, label: "Gamer" },
+          { id: 4, label: "Pessoal" },
         ]
       },
       {
         id: 3, label: "Drives",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Leitor/Gravador" },
         ]
       },
       {
         id: 4, label: "Fontes",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Acessórios" },
+          { id: 2, label: "Fonte 200W" },
+          { id: 3, label: "Fonte 230W" },
+          { id: 4, label: "Fonte 300W" },
+          { id: 5, label: "Fonte 350W" },
+          { id: 6, label: "Fonte 400W" },
+          { id: 7, label: "Fonte 450W" },
+          { id: 8, label: "Fonte 500W" },
+          { id: 9, label: "Fonte 550W" },
+          { id: 10, label: "Fonte 600W" },
+          { id: 11, label: "Fonte 650W" },
+          { id: 12, label: "Fonte 700W" },
+          { id: 13, label: "Fonte 750W" },
+          { id: 14, label: "Fonte 800W" },
+          { id: 15, label: "Fonte 850W" },
+          { id: 16, label: "Fonte 900W" },
+          { id: 17, label: "Fonte 1000W" },
+          { id: 18, label: "Fonte 1050W" },
+          { id: 19, label: "Fonte 1200W" },
+          { id: 20, label: "Fonte 1300W" },
+          { id: 21, label: "Fonte 1600W" },
         ]
       },
       {
         id: 5, label: "Kit Hardware",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Kit Upgrade" },
         ]
       },
       {
         id: 6, label: "Memória RAM",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "DDR 2" },
+          { id: 2, label: "DDR 3" },
+          { id: 3, label: "DDR 4" },
+          { id: 4, label: "DDR 5" },
+          { id: 5, label: "Optane" },
         ]
       },
       {
         id: 7, label: "Placa de vídeo(VGA)",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Acessórios" },
+          { id: 2, label: "Placa de vídeo AMD" },
+          { id: 3, label: "Placa de vídeo Intel" },
+          { id: 4, label: "Placa de vídeo Nvidia" },
         ]
       },
       {
         id: 8, label: "Placas Interfaces",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Placa de Som" },
         ]
       },
       {
         id: 9, label: "Placas-mãe",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Placas-mãe AMD" },
+          { id: 2, label: "Placas-mãe Intel" },
         ]
       },
       {
         id: 10, label: "Processadores",
         opcoes: [
-          { id: 1, label: "Intel" },
-          { id: 2, label: "AMD" },
+          { id: 1, label: "Processador AMD" },
+          { id: 2, label: "Processador Intel" },
         ]
       },
       {
         id: 11, label: "SSD",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Acessórios" },
+          { id: 2, label: "SSD Externo / Portátil" },
+          { id: 3, label: "SSD M.2 SATA" },
+          { id: 4, label: "SSD PCIe NVMe" },
+          { id: 5, label: "SSD PCIe NVMe U.2 Enterprise" },
+          { id: 6, label: "SSD SATA" },
         ]
       },
     ],
@@ -139,109 +175,189 @@ const departamentos = [
       {
         id: 1, label: "Cabos e Adaptadores",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Adaptadores Áudio" },
+          { id: 2, label: "Adaptadores Bluetooth" },
+          { id: 3, label: "Adaptadores DisplayPort" },
+          { id: 4, label: "Adaptadores DVI" },
+          { id: 5, label: "Adaptadores Extensor" },
+          { id: 6, label: "Adaptadores HDMI" },
+          { id: 7, label: "Adaptadores Micro USB" },
+          { id: 8, label: "Adaptadores Rede" },
+          { id: 9, label: "Adaptadores SATA" },
+          { id: 10, label: "Adaptadores USB" },
+          { id: 11, label: "Adaptadores USB-C" },
+          { id: 12, label: "Adaptadores VGA" },
+          { id: 13, label: "Cabos Áudio" },
+          { id: 14, label: "Cabos de Energia" },
+          { id: 15, label: "Cabos Extensor" },
+          { id: 16, label: "Cabos Fonte" },
+          { id: 17, label: "Cabos Transferência de Dados" },
+          { id: 18, label: "Cabos VGA" },
+          { id: 19, label: "Cabos Vídeo" },
+          { id: 20, label: "Emenda/Conector" },
+          { id: 21, label: "Hubs" },
+          { id: 22, label: "Organizador de Cabos" },
+          { id: 23, label: "Splitter" },
         ]
       },
       {
         id: 2, label: "Caixa de Som",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Caixa de Som Gamer" },
+          { id: 2, label: "Caixa de Som Pc" },
+          { id: 3, label: "Soundbar Gamer" },
+          { id: 4, label: "Subwoofer Gamer" },
         ]
       },
       {
         id: 3, label: "Carteira de Criptomoedas",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Digital" },
         ]
       },
       {
         id: 4, label: "Fone de Ouvido Gamer",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Acessórios para Fone Gamer" },
+          { id: 2, label: "Com Fio" },
+          { id: 3, label: "Sem Fio" },
         ]
       },
       {
         id: 5, label: "Gabinetes",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Acessórios para Gabinetes" },
+          { id: 2, label: "Gabinete Full Tower" },
+          { id: 3, label: "Gabinete Mid Tower" },
+          { id: 4, label: "Gabinete Mini Tower" },
         ]
       },
       {
         id: 6, label: "Headset Gamer",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Acessórios para Headset Gamer" },
+          { id: 2, label: "Com Fio" },
+          { id: 3, label: "Sem Fio" },
         ]
       },
       {
-        id: 7, label: "Kit Gamer",
+        id: 7, label: "Headsets",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Com Fio" },
+          { id: 2, label: "Sem Fio" },
         ]
       },
       {
-        id: 8, label: "Mesa Digitalizadora",
+        id: 8, label: "Kit Gamer",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Mouse + Mousepad" },
+          { id: 2, label: "Mouse + Mousepad + Teclado + Headset" },
+          { id: 3, label: "Mouse + Teclado" },
+          { id: 4, label: "Mouse + Teclado + Headset" },
+          { id: 5, label: "Teclado + Mouse + Mousepad" },
         ]
       },
       {
-        id: 9, label: "Mouse Gamer",
+        id: 9, label: "Mesa Digitalizadora",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Acessórios para Mesa Digitalizadora" },
+          { id: 2, label: "Display" },
+          { id: 3, label: "Mesa" },
         ]
       },
       {
-        id: 10, label: "Mouse Pad",
+        id: 10, label: "Mouse Gamer",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Acessórios para Mouse Gamer" },
+          { id: 2, label: "Com Fio" },
+          { id: 3, label: "Sem Fio" },
         ]
       },
       {
-        id: 11, label: "Óculos",
+        id: 11, label: "Mouse Pad",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Mouse Pad Gamer" },
+          { id: 2, label: "Mouse Pad Office" },
         ]
       },
       {
-        id: 12, label: "Pen Drive",
+        id: 12, label: "Óculos",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Óculos de Proteção" },
+          { id: 2, label: "Óculos de Realidade Virtual" },
+          { id: 3, label: "Óculos de Sol" },
         ]
       },
       {
-        id: 13, label: "Streamer",
+        id: 13, label: "Pen Drive",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Pen Drive 1 TB" },
+          { id: 2, label: "Pen Drive 8 GB" },
+          { id: 3, label: "Pen Drive 16 GB" },
+          { id: 4, label: "Pen Drive 32 GB" },
+          { id: 5, label: "Pen Drive 64 GB" },
+          { id: 6, label: "Pen Drive 128 GB" },
+          { id: 7, label: "Pen Drive 256 GB" },
+          { id: 8, label: "Pen Drive 512 GB" },
         ]
       },
       {
-        id: 14, label: "Suportes",
+        id: 14, label: "Streamer",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Acessórios Para Streamer" },
+          { id: 2, label: "Áudio" },
+          { id: 3, label: "Iluminação" },
+          { id: 4, label: "Key Light" },
+          { id: 5, label: "Kit Streamer" },
+          { id: 6, label: "Microfone Streamer" },
+          { id: 7, label: "Placa de Captura" },
+          { id: 8, label: "Stream Deck" },
+          { id: 9, label: "Tela Verde" },
         ]
       },
       {
-        id: 15, label: "Suprimentos",
+        id: 15, label: "Suportes",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Apoio para Pés" },
+          { id: 2, label: "Suporte de Braço" },
+          { id: 3, label: "Suporte para CPU" },
+          { id: 4, label: "Suporte para Headset" },
+          { id: 5, label: "Suporte para Monitor" },
+          { id: 6, label: "Suporte para Notebook" },
         ]
       },
       {
-        id: 16, label: "Teclado e Mouse",
+        id: 16, label: "Suprimentos",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Fitas" },
         ]
       },
       {
-        id: 17, label: "Teclado Gamer",
+        id: 17, label: "Teclado e Mouse",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Ergonomia" },
+          { id: 2, label: "Kit Office" },
+          { id: 3, label: "Kit Teclado + Mouse" },
+          { id: 4, label: "Mouse com Fio" },
+          { id: 5, label: "Mouse sem Fio" },
+          { id: 6, label: "Teclado com Fio" },
+          { id: 7, label: "Teclado sem Fio" },
+          { id: 8, label: "Trackpad" },
         ]
       },
       {
-        id: 18, label: "Webcam e Videoconferência",
+        id: 18, label: "Teclado Gamer",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Acessórios para Teclado Gamer" },
+          { id: 2, label: "Com Fio" },
+          { id: 3, label: "Sem Fio" },
+        ]
+      },
+      {
+        id: 19, label: "Webcam e Videoconferência",
+        opcoes: [
+          { id: 1, label: "Videoconferência" },
+          { id: 2, label: "Webcam" },
         ]
       },
     ],
@@ -250,9 +366,72 @@ const departamentos = [
     id: 3, label: "Computadores",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Impressoras",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Impressora 3D" },
+          { id: 2, label: "Impressora Fotográfica" },
+          { id: 3, label: "Impressora Laser" },
+          { id: 4, label: "Impressora Matricial" },
+          { id: 5, label: "Impressora Multifuncional" },
+          { id: 6, label: "Impressora Plotter" },
+          { id: 7, label: "Impressora Tanque de Tinta" },
+          { id: 8, label: "Máquina de Gravação" },
+          { id: 9, label: "Suprimentos" },
+        ]
+      },
+      {
+        id: 2, label: "Monitores",
+        opcoes: [
+          { id: 1, label: "Monitor Gamer" },
+          { id: 2, label: "Monitor Office" },
+          { id: 3, label: "Monitor Portátil" },
+          { id: 4, label: "Monitor Profissional" },
+          { id: 5, label: "Monitor Smart" },
+        ]
+      },
+      {
+        id: 3, label: "Notebook/Macbook",
+        opcoes: [
+          { id: 1, label: "Notebooks" },
+        ]
+      },
+      {
+        id: 4, label: "Notebooks",
+        opcoes: [
+          { id: 1, label: "Acessórios para Notebook" },
+          { id: 2, label: "Chromebook" },
+          { id: 3, label: "Macbook" },
+          { id: 4, label: "Notebook Acer" },
+          { id: 5, label: "Notebook Asus" },
+          { id: 6, label: "Notebook Dell" },
+          { id: 7, label: "Notebook Gamer" },
+          { id: 8, label: "Notebook Gigabyte" },
+          { id: 9, label: "Notebook Lenovo" },
+          { id: 10, label: "Notebook LG" },
+          { id: 11, label: "Notebook MSI" },
+          { id: 12, label: "Notebook Multilaser" },
+          { id: 13, label: "Notebook Office" },
+          { id: 14, label: "Notebook Positivo" },
+          { id: 15, label: "Notebook Samsung" },
+          { id: 16, label: "Notebook Vaio" },
+        ]
+      },
+      {
+        id: 5, label: "PC",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 6, label: "Scanners",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 7, label: "Softwares",
+        opcoes: [
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -261,9 +440,9 @@ const departamentos = [
     id: 4, label: "Games",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -272,9 +451,9 @@ const departamentos = [
     id: 5, label: "Celular & Smartphone",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -283,9 +462,9 @@ const departamentos = [
     id: 6, label: "TV",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -294,9 +473,9 @@ const departamentos = [
     id: 7, label: "Audio",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -305,9 +484,9 @@ const departamentos = [
     id: 8, label: "Projetores",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -316,9 +495,9 @@ const departamentos = [
     id: 9, label: "Espaço Gamer",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -327,9 +506,9 @@ const departamentos = [
     id: 10, label: "Escritório",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -338,9 +517,9 @@ const departamentos = [
     id: 11, label: "Tablets, iPads e E-readers",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -349,9 +528,9 @@ const departamentos = [
     id: 12, label: "Casa Inteligemte",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -360,9 +539,9 @@ const departamentos = [
     id: 13, label: "Gameras e Drones",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -371,9 +550,9 @@ const departamentos = [
     id: 14, label: "Energia",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -382,9 +561,9 @@ const departamentos = [
     id: 15, label: "Conectividade",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -393,9 +572,9 @@ const departamentos = [
     id: 16, label: "Geek",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -404,9 +583,9 @@ const departamentos = [
     id: 17, label: "Eletrodomésticos",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -415,9 +594,9 @@ const departamentos = [
     id: 18, label: "Eletroportáteis",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -426,9 +605,9 @@ const departamentos = [
     id: 19, label: "Ar e Ventilação",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -437,9 +616,9 @@ const departamentos = [
     id: 20, label: "Segurança",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -448,9 +627,9 @@ const departamentos = [
     id: 21, label: "Automação",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -459,9 +638,9 @@ const departamentos = [
     id: 22, label: "Telefonia Fixa",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -470,9 +649,9 @@ const departamentos = [
     id: 23, label: "Robótica",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -481,9 +660,9 @@ const departamentos = [
     id: 24, label: "Serviços Digitais",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -492,9 +671,9 @@ const departamentos = [
     id: 25, label: "Benefício",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -503,9 +682,9 @@ const departamentos = [
     id: 26, label: "Moda",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -514,9 +693,9 @@ const departamentos = [
     id: 27, label: "Ferramentas",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -525,9 +704,9 @@ const departamentos = [
     id: 28, label: "Cuidados Pessoais",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
@@ -536,9 +715,9 @@ const departamentos = [
     id: 29, label: "Brinquedos",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Item",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Item" },
         ]
       },
     ],
