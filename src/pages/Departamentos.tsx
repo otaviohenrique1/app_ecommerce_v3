@@ -19,7 +19,7 @@ export default function Departamentos({ navigation }: Props) {
           keyExtractor={(item) => item.id.toString()}
           renderItem={({ item }) => {
             return (
-              <List.Accordion title={item.label} id={item.id}>
+              <List.Accordion title={item.label} id={item.id} style={{ backgroundColor: "lightgrey" }}>
                 <FlatList
                   data={item.opcoes}
                   keyExtractor={(item) => item.id.toString()}
@@ -419,19 +419,30 @@ const departamentos = [
       {
         id: 5, label: "PC",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "All In One" },
+          { id: 2, label: "Computador AMD" },
+          { id: 3, label: "Computador IMAC" },
+          { id: 4, label: "Computador Intel" },
+          { id: 5, label: "Computador Mac Mini" },
+          { id: 6, label: "Computador Mini PC" },
+          { id: 7, label: "PC Gamer" },
         ]
       },
       {
         id: 6, label: "Scanners",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "Scanner 3D" },
+          { id: 2, label: "Scanner de Mesa" },
+          { id: 3, label: "Scanner Portátil" },
         ]
       },
       {
         id: 7, label: "Softwares",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "Antivírus" },
+          { id: 2, label: "Design Digital" },
+          { id: 3, label: "Office" },
+          { id: 4, label: "Windows" },
         ]
       },
     ],
@@ -440,9 +451,63 @@ const departamentos = [
     id: 4, label: "Games",
     opcoes: [
       {
-        id: 1, label: "Item",
+        id: 1, label: "Acessórios Gamer",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "Adaptadores Gamer" },
+          { id: 2, label: "Cabos Gamer" },
+          { id: 3, label: "Carregadores Gamer" },
+          { id: 4, label: "Joystick" },
+          { id: 5, label: "Óculos Gamer" },
+          { id: 6, label: "Suportes Gamer" },
+        ]
+      },
+      {
+        id: 2, label: "Nintendo",
+        opcoes: [
+          { id: 1, label: "Acessórios Nintendo" },
+          { id: 2, label: "Consoles Nintendo" },
+          { id: 3, label: "Controles Nintendo" },
+          { id: 4, label: "Jogos Nintendo" },
+        ]
+      },
+      {
+        id: 3, label: "Playstation",
+        opcoes: [
+          { id: 1, label: "Acessórios Playstation" },
+          { id: 2, label: "Consoles Playstation" },
+          { id: 3, label: "Controles Playstation" },
+          { id: 4, label: "Jogos Playstation" },
+        ]
+      },
+      {
+        id: 4, label: "Portáteis",
+        opcoes: [
+          { id: 1, label: "ASUS" },
+        ]
+      },
+      {
+        id: 5, label: "Simuladores",
+        opcoes: [
+          { id: 1, label: "Cockpit" },
+          { id: 2, label: "Farm Simulator" },
+          { id: 3, label: "Fly Simulator" },
+          { id: 4, label: "Racing" },
+        ]
+      },
+      {
+        id: 6, label: "Video Game Retrô",
+        opcoes: [
+          { id: 1, label: "Consoles" },
+          { id: 2, label: "Controles" },
+        ]
+      },
+      {
+        id: 7, label: "Xbox",
+        opcoes: [
+          { id: 1, label: "Acessórios Xbox" },
+          { id: 2, label: "Consoles Xbox" },
+          { id: 3, label: "Controles Xbox" },
+          { id: 4, label: "Jogos Xbox" },
         ]
       },
     ],
