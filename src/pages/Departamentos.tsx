@@ -60,9 +60,14 @@ const departamentos = [
     id: 1, label: "Hardware",
     opcoes: [
       {
-        id: 1, label: "Collers",
+        id: 1, label: "Coolers",
         opcoes: [
-          { id: 1, label: "Item 1" },
+          { id: 1, label: "Acessórios para Cooler" },
+          { id: 2, label: "Air Cooler" },
+          { id: 3, label: "Almofada Térmica" },
+          { id: 4, label: "FAN" },
+          { id: 5, label: "Pasta Térmica" },
+          { id: 6, label: "Water Cooler" },
         ]
       },
       {
@@ -132,9 +137,111 @@ const departamentos = [
     id: 2, label: "Periféricos",
     opcoes: [
       {
-        id: 1, label: "Item 1",
+        id: 1, label: "Cabos e Adaptadores",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 2, label: "Caixa de Som",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 3, label: "Carteira de Criptomoedas",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 4, label: "Fone de Ouvido Gamer",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 5, label: "Gabinetes",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 6, label: "Headset Gamer",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 7, label: "Kit Gamer",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 8, label: "Mesa Digitalizadora",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 9, label: "Mouse Gamer",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 10, label: "Mouse Pad",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 11, label: "Óculos",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 12, label: "Pen Drive",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 13, label: "Streamer",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 14, label: "Suportes",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 15, label: "Suprimentos",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 16, label: "Teclado e Mouse",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 17, label: "Teclado Gamer",
+        opcoes: [
+          { id: 1, label: "Item 1" },
+        ]
+      },
+      {
+        id: 18, label: "Webcam e Videoconferência",
+        opcoes: [
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -145,7 +252,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -156,7 +263,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -167,7 +274,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -178,7 +285,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -189,7 +296,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -200,7 +307,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -211,7 +318,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -222,7 +329,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -233,7 +340,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -244,7 +351,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -255,7 +362,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -266,7 +373,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -277,7 +384,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -288,7 +395,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -299,7 +406,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -310,7 +417,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -321,7 +428,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -332,7 +439,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -343,7 +450,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -354,7 +461,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -365,7 +472,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -376,7 +483,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -387,7 +494,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -398,7 +505,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -409,7 +516,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -420,7 +527,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
@@ -431,7 +538,7 @@ const departamentos = [
       {
         id: 1, label: "Item 1",
         opcoes: [
-          { id: 1, label: "Item 1" }
+          { id: 1, label: "Item 1" },
         ]
       },
     ],
