@@ -623,25 +623,52 @@ const departamentos = [
       {
         id: 4, label: "Streaming",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "Amazon Fire TV" },
+          { id: 2, label: "Apple TV" },
+          { id: 3, label: "Chromecast" },
+          { id: 4, label: "Roku" },
+          { id: 5, label: "TV Box" },
+          { id: 6, label: "Xiaomi" },
         ]
       },
       {
         id: 5, label: "TV 4K",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "32 Polegadas" },
+          { id: 2, label: "43 Polegadas" },
+          { id: 3, label: "48 Polegadas" },
+          { id: 4, label: "50 Polegadas" },
+          { id: 5, label: "55 Polegadas" },
+          { id: 6, label: "58 Polegadas" },
+          { id: 7, label: "60 Polegadas" },
+          { id: 8, label: "65 Polegadas" },
+          { id: 9, label: "70 Polegadas" },
+          { id: 10, label: "75 Polegadas" },
+          { id: 11, label: "77 Polegadas" },
+          { id: 12, label: "82 Polegadas" },
+          { id: 13, label: "85 Polegadas" },
+          { id: 14, label: "98 Polegadas" },
         ]
       },
       {
         id: 6, label: "TV 8K",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "55 Polegadas" },
+          { id: 2, label: "65 Polegadas" },
+          { id: 3, label: "75 Polegadas" },
+          { id: 4, label: "85 Polegadas" },
         ]
       },
       {
         id: 7, label: "TV Led",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "24 Polegadas" },
+          { id: 2, label: "32 Polegadas" },
+          { id: 3, label: "39 Polegadas" },
+          { id: 4, label: "43 Polegadas" },
+          { id: 5, label: "50 Polegadas" },
+          { id: 6, label: "55 Polegadas" },
+          { id: 7, label: "65 Polegadas" },
         ]
       },
     ],
@@ -650,9 +677,93 @@ const departamentos = [
     id: 7, label: "Audio",
     opcoes: [
       {
-        id: 1, label: "Item",
+        id: 1, label: "Aparelho de Som",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "Amplificadores" },
+          { id: 2, label: "Mini System" },
+        ]
+      },
+      {
+        id: 2, label: "Assistente Virtual",
+        opcoes: [
+          { id: 1, label: "Amazon Alexa" },
+          { id: 2, label: "Google Assistente" },
+        ]
+      },
+      {
+        id: 3, label: "Caixa de Som",
+        opcoes: [
+          { id: 1, label: "Acústica" },
+          { id: 2, label: "Amplificada" },
+          { id: 3, label: "Portátil" },
+          { id: 4, label: "Torre" },
+        ]
+      },
+      {
+        id: 4, label: "Caixa de Som para PC",
+        opcoes: [
+          { id: 1, label: "Caixa de Som Gamer" },
+          { id: 2, label: "Soundbar Gamer" },
+          { id: 3, label: "Subwoofer Gamer" },
+        ]
+      },
+      {
+        id: 5, label: "DJ",
+        opcoes: [
+          { id: 1, label: "Controladora" },
+          { id: 2, label: "Equipamentos para DJ" },
+          { id: 3, label: "Mesa de Som" },
+        ]
+      },
+      {
+        id: 6, label: "DVD e Blue Ray",
+        opcoes: [
+          { id: 1, label: "DVD" },
+        ]
+      },
+      {
+        id: 7, label: "Fone de Ouvido",
+        opcoes: [
+          { id: 1, label: "Bluetooth" },
+          { id: 2, label: "Esportivo" },
+          { id: 3, label: "Fone de Ouvido com Fio" },
+          { id: 4, label: "Headphone" },
+          { id: 5, label: "True Wireless" },
+        ]
+      },
+      {
+        id: 8, label: "Home Theater e Soundbar",
+        opcoes: [
+          { id: 1, label: "Home Theater" },
+          { id: 2, label: "Receiver" },
+          { id: 3, label: "Soundbar" },
+          { id: 4, label: "Subwoofer" },
+        ]
+      },
+      {
+        id: 9, label: "Microfone",
+        opcoes: [
+          { id: 1, label: "Compacto" },
+          { id: 2, label: "Kit Estúdio" },
+          { id: 3, label: "Lapela" },
+          { id: 4, label: "Microfone Com Fio" },
+          { id: 5, label: "Microfone Condensador" },
+          { id: 6, label: "Microfone Dinâmico" },
+          { id: 7, label: "Microfone Sem Fio" },
+        ]
+      },
+      {
+        id: 10, label: "Rádio",
+        opcoes: [
+          { id: 1, label: "Rádio Portátil" },
+          { id: 2, label: "Rádio Relógio" },
+        ]
+      },
+      {
+        id: 11, label: "Toca-Discos e Vitrolas",
+        opcoes: [
+          { id: 1, label: "Profissionais" },
+          { id: 2, label: "Toca-Discos" },
         ]
       },
     ],
