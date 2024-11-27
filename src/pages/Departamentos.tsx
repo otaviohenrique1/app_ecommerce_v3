@@ -772,9 +772,19 @@ const departamentos = [
     id: 8, label: "Projetores",
     opcoes: [
       {
-        id: 1, label: "Item",
+        id: 1, label: "Acessórios para Projeção",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "Apresentador" },
+          { id: 2, label: "Suporte para Projeção" },
+          { id: 3, label: "Telas" },
+        ]
+      },
+      {
+        id: 2, label: "Projetor",
+        opcoes: [
+          { id: 1, label: "Mini Projetor" },
+          { id: 2, label: "Projetor de Imagem" },
+          { id: 3, label: "Projetor Portátil" },
         ]
       },
     ],
@@ -805,7 +815,105 @@ const departamentos = [
     id: 11, label: "Tablets, iPads e E-readers",
     opcoes: [
       {
-        id: 1, label: "Item",
+        id: 1, label: "Acessórios para Tablets",
+        opcoes: [
+          { id: 1, label: "Capas" },
+          { id: 2, label: "Conectores" },
+          { id: 3, label: "Lápis Digital" },
+          { id: 4, label: "Pelicula" },
+          { id: 5, label: "Teclado" },
+        ]
+      },
+      {
+        id: 1, label: "Amazon",
+        opcoes: [
+          { id: 1, label: "Fire 7" },
+        ]
+      },
+      {
+        id: 1, label: "Apple iPad",
+        opcoes: [
+          { id: 1, label: "Acessórios" },
+          { id: 2, label: "Ipad" },
+          { id: 3, label: "Ipad Air" },
+          { id: 4, label: "Ipad Mini" },
+          { id: 5, label: "Ipad Pro" },
+        ]
+      },
+      {
+        id: 1, label: "Goldentec",
+        opcoes: [
+          { id: 1, label: "Tab10" },
+        ]
+      },
+      {
+        id: 1, label: "Kids",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 1, label: "Kindles",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 1, label: "Lenovo",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 1, label: "Multilaser",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 1, label: "Nokia",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 1, label: "Philco",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 1, label: "Positivo",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 1, label: "Samsung Galaxy",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 1, label: "TCL",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 1, label: "Vaio",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 1, label: "Xiaomi",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 1, label: "Zebra",
         opcoes: [
           { id: 1, label: "Item" },
         ]
@@ -824,7 +932,7 @@ const departamentos = [
     ],
   },
   {
-    id: 13, label: "Gameras e Drones",
+    id: 13, label: "Câmeras e Drones",
     opcoes: [
       {
         id: 1, label: "Item",
