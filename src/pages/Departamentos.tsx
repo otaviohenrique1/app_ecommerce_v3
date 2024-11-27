@@ -516,67 +516,130 @@ const departamentos = [
     id: 5, label: "Celular & Smartphone",
     opcoes: [
       {
-        id: 1, label: "Item",
+        id: 1, label: "Acessórios para Smartphones",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "Adaptadores" },
+          { id: 2, label: "Capas e Películas" },
+          { id: 3, label: "Carregadores" },
+          { id: 4, label: "Chip" },
+          { id: 5, label: "Estojo Esterilizador" },
+          { id: 6, label: "Gamepad" },
+          { id: 7, label: "Limpa Telas" },
+          { id: 8, label: "Suporte" },
         ]
       },
       {
-        id: 1, label: "Item",
+        id: 2, label: "Celular Básico",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "Asus" },
+          { id: 2, label: "iPhone" },
+          { id: 3, label: "Kits" },
+          { id: 4, label: "LG" },
+          { id: 5, label: "Mais Marcas" },
+          { id: 6, label: "Motorola" },
+          { id: 7, label: "Realme" },
+          { id: 8, label: "Samsung Galaxy" },
+          { id: 9, label: "Smartphone Lenovo" },
+          { id: 10, label: "Xiaomi" },
         ]
       },
       {
-        id: 1, label: "Item",
+        id: 3, label: "Smartphones",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "Asus" },
+          { id: 2, label: "iPhone" },
+          { id: 3, label: "Kits" },
+          { id: 4, label: "LG" },
+          { id: 5, label: "Mais Marcas" },
+          { id: 6, label: "Motorola" },
+          { id: 7, label: "Philco" },
+          { id: 8, label: "Realme" },
+          { id: 9, label: "Samsung Galaxy" },
+          { id: 10, label: "Smartphone Lenovo" },
+          { id: 11, label: "Xiaomi" },
         ]
       },
       {
-        id: 1, label: "Item",
+        id: 4, label: "Wearables",
         opcoes: [
-          { id: 1, label: "Item" },
+          { id: 1, label: "Acessórios para Wearables" },
+          { id: 2, label: "Amazfit" },
+          { id: 3, label: "Apple" },
+          { id: 4, label: "Garmin" },
+          { id: 5, label: "Huawei" },
+          { id: 6, label: "Husky Sports" },
+          { id: 7, label: "Kabum Smart" },
+          { id: 8, label: "Mais Marcas" },
+          { id: 9, label: "Motorola" },
+          { id: 10, label: "Philco" },
+          { id: 11, label: "Samsung Galaxy" },
+          { id: 12, label: "TCL" },
+          { id: 13, label: "Xiaomi" },
         ]
       },
-      {
-        id: 1, label: "Item",
-        opcoes: [
-          { id: 1, label: "Item" },
-        ]
-      },
-      {
-        id: 1, label: "Item",
-        opcoes: [
-          { id: 1, label: "Item" },
-        ]
-      },
-      {
-        id: 1, label: "Item",
-        opcoes: [
-          { id: 1, label: "Item" },
-        ]
-      },
-      {
-        id: 1, label: "Item",
-        opcoes: [
-          { id: 1, label: "Item" },
-        ]
-      },
-      {
-        id: 1, label: "Item",
-        opcoes: [
-          { id: 1, label: "Item" },
-        ]
-      },
-      
     ],
   },
   {
     id: 6, label: "TV",
     opcoes: [
       {
-        id: 1, label: "Item",
+        id: 1, label: "Acessórios para TVs",
+        opcoes: [
+          { id: 1, label: "Adaptadores" },
+          { id: 2, label: "Antenas para TV" },
+          { id: 3, label: "Controle Remoto" },
+          { id: 4, label: "Conversor Digital" },
+          { id: 5, label: "Moldura" },
+          { id: 6, label: "Suportes" },
+        ]
+      },
+      {
+        id: 2, label: "Projetores",
+        opcoes: [
+          { id: 1, label: "Projetor Smart" },
+        ]
+      },
+      {
+        id: 3, label: "Smart TV",
+        opcoes: [
+          { id: 1, label: "24 Polegadas" },
+          { id: 2, label: "32 Polegadas" },
+          { id: 3, label: "39 Polegadas" },
+          { id: 4, label: "40 Polegadas" },
+          { id: 5, label: "42 Polegadas" },
+          { id: 6, label: "43 Polegadas" },
+          { id: 7, label: "48 Polegadas" },
+          { id: 8, label: "49 Polegadas" },
+          { id: 9, label: "50 Polegadas" },
+          { id: 10, label: "55 Polegadas" },
+          { id: 11, label: "58 Polegadas" },
+          { id: 12, label: "60 Polegadas" },
+          { id: 13, label: "65 Polegadas" },
+          { id: 14, label: "70 Polegadas" },
+          { id: 15, label: "75 Polegadas" },
+          { id: 16, label: "77 Polegadas" },
+        ]
+      },
+      {
+        id: 4, label: "Streaming",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 5, label: "TV 4K",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 6, label: "TV 8K",
+        opcoes: [
+          { id: 1, label: "Item" },
+        ]
+      },
+      {
+        id: 7, label: "TV Led",
         opcoes: [
           { id: 1, label: "Item" },
         ]
